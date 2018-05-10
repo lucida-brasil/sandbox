@@ -55,6 +55,12 @@
       z-index: 900;
     }
     </style>
+    <script>
+function funcao1()
+{
+alert("Você clicou no botão View Source!");
+}
+</script>
   </head>
   <body>
     <!-- Testando -->
@@ -90,7 +96,8 @@
           <div class="android-navigation-container">
             <nav class="android-navigation mdl-navigation">
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Phones</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Tablets</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="" onclick="funcao1()" value="Exibir Alert"/>Tablets</a>
+              <!-- <input type="button" onclick="funcao1()" value="Exibir Alert" /> -->
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Wear</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">TV</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Auto</a>
