@@ -125,17 +125,16 @@ a img{
     width: 100px;
   }
 
-/*Mudei o border aqui de 4 para 40*/
   .android-navigation .mdl-navigation__link {
     display: inline-block;
     height: 60px;
     line-height: 68px;
     background-color: transparent !important;
-    border-bottom: 40px solid transparent;
+    border-bottom: 4px solid transparent;
   }
   /*Mudei aqui também o border de 4 para 40*/
     .android-navigation .mdl-navigation__link:hover {
-      border-bottom: 4px solid #8bc34a;
+      border-bottom: 40px solid #8bc34a;
     }
 
   .android-search-box {
