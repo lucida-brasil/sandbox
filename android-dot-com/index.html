@@ -70,7 +70,7 @@
       <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
         <div class="mdl-layout__header-row">
           <span class onclick="mudaCor()"="android-title mdl-layout-title">
-            <img class="android-logo-image" src="images/android-logo.png">
+            <img class="android-logo-image" src="images/android-logo.png" id="andLogo"/>
           </span>
           <!-- Add spacer, to align navigation to the right in desktop -->
           <div class="android-header-spacer mdl-layout-spacer"></div>
@@ -98,6 +98,12 @@
           <span class="android-mobile-title mdl-layout-title">
             <img class="android-logo-image" src="images/android-logo.png">
           </span>
+          <!-- Criando um botão para alterar a imagem -->
+          <form>
+           <input type="button" id="org" value="old" onclick="voltaLogo();"/>
+           <input type="button" id="org1" value="new" onclick="vaiLogo();"/>
+          </form>	
+          <!-- Final -->
           <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
             <i class="material-icons">more_vert</i>
           </button>
