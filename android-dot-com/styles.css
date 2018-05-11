@@ -18,6 +18,15 @@ body {
   margin: 0;
 }
 
+#manipula {
+height:50px;
+line-height:50px;
+color: yellow;
+font-size:10pt;
+background-color: red;
+margin-bottom:15px; 
+}
+
 /* Disable ugly boxes around images in IE10 */
 a img{
   border: 0px;
