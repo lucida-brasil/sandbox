@@ -125,7 +125,7 @@ a img{
     width: 100px;
   }
 
-  .android-navigation .mdl-navigation__link {
+  .android-navigation .mdl-navigation__link .menu_principal {
     display: inline-block;
     height: 60px;
     line-height: 68px;
