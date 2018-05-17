@@ -15,11 +15,16 @@
 <teste>
 <html lang="en">
   <head>
-                  <script>
+          <script>
+                    /* é possível fazer dessa forma (QUE ESTÁ CERTA TAMBÉM) OU a que está funcionando descomentada
  window.dataLayer = window.dataLayer || [];
  dataLayer.push({ 
     'seu_nome' : 'Marcelo'
  });
+                 Dessa forma \/ também está certa */
+              window.dataLayer [{ 
+              'seu_nome' : 'Marcelo'
+               }];
           </script>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
