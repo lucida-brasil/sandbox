@@ -18,34 +18,6 @@
 
 <html lang="en">
   <head>
-    <!-- Adicionar o GTag GA4 --!>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7EQMR29936"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7EQMR29936');
-</script>
-      <!-- Adicionando um DataLayer
-      <script type="text/javascript">
-dataLayer = dataLayer || [];
-dataLayer.push({
-'PageType':'HomePage',
-'email': 'email address of the user'
-});
-</script>
-    FIM DataLayer -->
-    <!-- Outro DataLayer -->
-    <!-- 
-      <a href = "index2.html" name = "LogoAnt" onclick = "dataLayer.push ({
-                                                          'event':.'button1-click' 
-                                                          });"
-     > Novo Botão </a>
--->
-    <!-- Fim DL -->
-
     <!--TESTE -->
    <!-- window.dataLayer.push({
     'products': [
@@ -55,12 +27,12 @@ dataLayer.push({
 }); -->
     <!-- FIM TESTE -->
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-W8MVR8V');</script>
-<!-- End Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PC9ZBCV');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
@@ -85,31 +57,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </style>
   </head>
   <body>
-    <body onload=popup()>
-    <a href="#popup" onclick="popup()"></a>
-    </body>
-
+  <!--
+   <body onload=popup()>
+  
+  <a href="#popup" onclick="popup()">Abrir o Popup Novamente</a>
+  </body>
+   -->
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PC9ZBCV"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
       <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
         <div class="mdl-layout__header-row">
-          <!-- Coloquei o onClick no logo do android-->
-          <span class onclick="mudaCor()"="android-title mdl-layout-title">
-            <img class="android-logo-image" src="images/android-logo.png" id="andLogo"/>
-          <span>/
+          <span class="android-title mdl-layout-title">
+            <img class="android-logo-image" src="images/android-logo.png">
+          </span>
           <!-- Add spacer, to align navigation to the right in desktop -->
-             <!-- Criando um botão para alterar a imagem -->/
-          <div>
-            <form>
-           <input type="button" id="org" value="Logo Antigo" onclick="voltaLogo();"/>
-           <input type="button" id="org1" value="Logo Novo" onclick="vaiLogo();"/>
-            </form>
-          </div>  
-          <!-- Final da criação do botão -->
           <div class="android-header-spacer mdl-layout-spacer"></div>
           <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
             <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
@@ -123,10 +88,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div class="android-navigation-container">
             <nav class="android-navigation mdl-navigation">
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Phones</a>
-            //  Criando a mudança do logo ->
-              <a class="mdl-navigation__link" id="org1" onclick="vaiLogo();" href="#">Muda Logo</a>/
-              <a class="mdl-navigation__link" id="org" onclick="voltaLogo();" href="#">Volta Logo</a>
-            // Encerrando a mudança do logo-->
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Tablets</a>
               <!-- <input type="button" onclick="funcao1()" value="Exibir Alert" /> -->
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Wear</a>
@@ -137,13 +98,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </nav>
           </div>
           <span class="android-mobile-title mdl-layout-title">
-            <img class="android-logo-image" src="images/android-logo.png" id="andLogo">
+            <img class="android-logo-image" src="images/android-logo.png">
           </span>
-
           <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
             <i class="material-icons">more_vert</i>
           </button>
-          TESTE pra ver se é esse
           <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
             <li class="mdl-menu__item">5.0 Lollipop</li>
             <li class="mdl-menu__item">4.4 KitKat</li>
@@ -159,12 +118,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </span>
         <nav class="mdl-navigation">
           <a class="mdl-navigation__link" href="#">Phones</a>
-        <!--
-          <a class="mdl-navigation__link" id="org1" onclick="vaiLogo();" href="#">NEW</a>
-          <a class="mdl-navigation__link" id="org1" onclick="voltaLogo();" href="#">OLD</a>
-          <input type="button" id="org1" value="new" onclick="vaiLogo();"/>
-          <input type="button" onclick="funcao1()" value="Exibir Alert" /> 
-        -->
+         <!-- <input type="button" onclick="funcao1()" value="Exibir Alert" /> -->
           <a class="mdl-navigation__link" href="">Tablets</a>
           <a class="mdl-navigation__link" href="">Wear</a>
           <a class="mdl-navigation__link" href="">TV</a>
@@ -193,8 +147,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="android-content mdl-layout__content">
         <a name="top"></a>
         <div class="android-be-together-section mdl-typography--text-center">
-          <div class="logo-font android-slogan">be together. not the same.</div>
-          <div class="logo-font android-sub-slogan">welcome to android... be yourself. do your thing. see what's going on.</div>
+          <div class="logo-font android-slogan">Esta página foi aberta através de um PopUp :D </div>
+          <div class="logo-font android-sub-slogan">Seja muito bem vindo(a). </div>
           <div class="logo-font android-create-character">
             <a href=""><img src="images/andy.png"> create your android character</a>
           </div>
@@ -391,7 +345,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </ul>
             <a class="android-link mdl-typography--font-light" href="">Blog</a>
             <a class="android-link mdl-typography--font-light" href="">Privacy Policy</a>
-            <a class="android-link mdl-typography--font-light" href="">Teste GA4</a>
           </div>
 
         </footer>
