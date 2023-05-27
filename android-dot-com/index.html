@@ -39,12 +39,12 @@ dataLayer.push({
 </script>
     FIM DataLayer -->
     <!-- Outro DataLayer -->
-    <!-- 
+    
       <a href = "index2.html" name = "LogoAnt" onclick = "dataLayer.push ({
                                                           'event':.'button1-click' 
                                                           });"
      > Novo Botão </a>
--->
+
     <!-- Fim DL -->
 
     <!--TESTE -->
@@ -88,13 +88,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <body>
     <body onload=popup()>
     <a href="#popup" onclick="popup()"></a>
-    </body>
-
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PC9ZBCV"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    
+    </body>    
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
         <div class="mdl-layout__header-row">
@@ -135,7 +129,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Auto</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">One</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Play</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://mpiovesan04.github.io/sandbox/android-dot-com/lista-produtos.html">Produtos</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://mpiovesan04.github.io/sandbox/android-dot-com/lista-produtos.html" dataLayer.push({
+                 'event':'addToCart',
+                 'PageType':'HomePage',
+'email': 'email address of the user'
+});>Produtos</a>
             </nav>
           </div>
           <span class="android-mobile-title mdl-layout-title">
