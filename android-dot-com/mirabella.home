@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nome do seu site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Produtos</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Bem-vindo ao nosso site de vendas de artigos femininos</h1>
+      <p>Aqui você encontra as melhores opções de roupas, calçados e acessórios femininos.</p>
+    </section>
+
+    <section>
+      <h2>Produtos em destaque</h2>
+      <ul>
+        <li>
+          <img src="imagem-produto.jpg" alt="Nome do produto">
+          <h3>Nome do produto</h3>
+          <p>Descrição do produto</p>
+          <a href="#">Comprar</a>
+        </li>
+        <li>
+          <img src="imagem-produto.jpg" alt="Nome do produto">
+          <h3>Nome do produto</h3>
+          <p>Descrição do produto</p>
+          <a href="#">Comprar</a>
+        </li>
+        <li>
+          <img src="imagem-produto.jpg" alt="Nome do produto">
+          <h3>Nome do produto</h3>
+          <p>Descrição do produto</p>
+          <a href="#">Comprar</a>
+        </li>
+      </ul>
+    </section>
+    <section>
+  <h2>Produtos em destaque</h2>
+  <ul>
+    <li>
+      <img src="imagem-produto.jpg" alt="Nome do produto">
+      <h3>Nome do produto</h3>
+      <p>Descrição do produto</p>
+      <a href="#comprar">Comprar</a>
+    </li>
+    <li>
+      <img src="imagem-produto.jpg" alt="Nome do produto">
+      <h3>Nome do produto</h3>
+      <p>Descrição do produto</p>
+      <a href="#comprar">Comprar</a>
+    </li>
+    <li>
+      <img src="imagem-produto.jpg" alt="Nome do produto">
+      <h3>Nome do produto</h3>
+      <p>Descrição do produto</p>
+      <a href="#comprar">Comprar</a>
+    </li>
+  </ul>
+</section>
+
+  </main>
+
+  <footer>
+    <p>Desenvolvido por Nome da Empresa &copy; 2023</p>
+  </footer>
+</body>
+</html>
