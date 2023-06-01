@@ -19,7 +19,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <h3>Produto 1</h3>
         <p>Descrição do Produto 1</p>
         <p>R$ 50,00</p>
-        <button class="add-to-cart">Adicionar ao Carrinho</button>
+        <button class="add-to-cart" onclick="dataLayer.push({'event': 'addToCart','PageType': 'ListaProdutos','email': 'email address of the user'});" href="https://mpiovesan04.github.io/sandbox/android-dot-com/checkout.html">Adicionar ao Carrinho</button>
       </div>
       <div class="product">
         <img src="imagem-produto-2.jpg" alt="Produto 2">
