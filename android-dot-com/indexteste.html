@@ -2,13 +2,10 @@
 <!--
   Material Design Lite
   Copyright 2015 Google Inc. All rights reserved.
-
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
-
       https://www.apache.org/licenses/LICENSE-2.0
-
   Unless required by applicable law or agreed to in writing, software
   distributed under the License is distributed on an "AS IS" BASIS,
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -18,17 +15,6 @@
 
 <html lang="en">
   <head>
-    <!-- Adicionar o GTag GA4 --!>
-<!-- Google tag (gtag.js) -->
-<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-7EQMR29936"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7EQMR29936');
-</script>
-    -->
       <!-- Adicionando um DataLayer
       <script type="text/javascript">
 dataLayer = dataLayer || [];
@@ -39,12 +25,12 @@ dataLayer.push({
 </script>
     FIM DataLayer -->
     <!-- Outro DataLayer -->
-    
+    <!-- 
       <a href = "index2.html" name = "LogoAnt" onclick = "dataLayer.push ({
                                                           'event':.'button1-click' 
                                                           });"
      > Novo Botão </a>
-
+-->
     <!-- Fim DL -->
 
     <!--TESTE -->
@@ -55,18 +41,18 @@ dataLayer.push({
     ]
 }); -->
     <!-- FIM TESTE -->
-    <!-- Google Tag Manager -->
+<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-W8MVR8V');</script>
+})(window,document,'script','dataLayer','GTM-T4S9983');</script>
 <!-- End Google Tag Manager -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Android</title>
+    <title>Página de Teste Android</title>
 
     <!-- Page styles -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
@@ -86,24 +72,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </style>
   </head>
   <body>
+   <!-- Criei um PopUp
     <body onload=popup()>
     <a href="#popup" onclick="popup()"></a>
-    </body>    
+    </body>
+   Fim do PopUp -->
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T4S9983"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
         <div class="mdl-layout__header-row">
           <!-- Coloquei o onClick no logo do android-->
           <span class onclick="mudaCor()"="android-title mdl-layout-title">
             <img class="android-logo-image" src="images/android-logo.png" id="andLogo"/>
-          <span>
+          </span>
           <!-- Add spacer, to align navigation to the right in desktop -->
              <!-- Criando um botão para alterar a imagem -->
-          <div>
+          <!--
+          <div>     
             <form>
            <input type="button" id="org" value="Logo Antigo" onclick="voltaLogo();"/>
            <input type="button" id="org1" value="Logo Novo" onclick="vaiLogo();"/>
             </form>
-          </div>  
+          </div> 
+           -->
           <!-- Final da criação do botão -->
           <div class="android-header-spacer mdl-layout-spacer"></div>
           <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
@@ -111,40 +107,45 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <i class="material-icons">search</i>
             </label>
             <div class="mdl-textfield__expandable-holder">
-              <input class="mdl-textfield__input" type="text" id="search-field">
+              <input class="mdl-textfield__input" type="text" id="search-field" name="Marcelo" onclick=dataLayer.push({'event': 'Marcelo'});>
             </div>
           </div>
+          <!-- Criando um DL -->
+          <script>
+                window.dataLayer.push({
+                'event': 'Marcelo',
+                'nome' : 'Marcelo2',
+                'email': 'email address of the user',
+                'idade': '23',
+                'dimension3': 'Teste de dimensão'
+                });
+          </script>
+           <!-- Fim DL -->
           <!-- Navigation -->
-          <div class="android-navigation-container">
+          <div class="android-navigation-container" id="android-navigation-container">
             <nav class="android-navigation mdl-navigation">
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Phones</a>
-            <!--Criando a mudança do logo -->
-              <a class="mdl-navigation__link" id="org1" onclick="vaiLogo();" href="#">Muda Logo</a>/
+              <a class="menu_principal mdl-navigation__link mdl-typography--text-uppercase" href="">Phones</a>
+             <!-- <a class="mdl-navigation__link" id="org1" onclick="vaiLogo();" href="#">Muda Logo</a>
               <a class="mdl-navigation__link" id="org" onclick="voltaLogo();" href="#">Volta Logo</a>
-            <!-- Encerrando a mudança do logo-->
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Tablets</a>
-              <a href="#" onclick="dataLayer.push({
-    'bookCategory': 'fiction',
-    'bookTitle': 'Cien años de soledad',
-    'bookAuthor': 'Gabriel García Márquez'
-});">Detalhes do livro</a>
+             -->
+              <a class="menu_principal2 mdl-navigation__link mdl-typography--text-uppercase" href="" id="Tablet" onClick="javascript:dataLayer.push({'event':'Teste','nome2':'Teste2','idade2':'25'});">Tablets</a>
               <!-- <input type="button" onclick="funcao1()" value="Exibir Alert" /> -->
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" onclick="dataLayer.push({'event': 'disparou'});"href="">Wear</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" onclick="dataLayer.push({'event': 'personalizado','propriedade_1': 'valor_1'});"href="">TV</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Auto</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">One</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Play</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" onclick="dataLayer.push({'event': 'addToCart','PageType': 'HomePage','email': 'email address of the user'});" href="https://mpiovesan04.github.io/sandbox/android-dot-com/lista-produtos.html">Produtos</a>
+              <!-- Criando um data Attribute no elemento Wear -->
+              <a class="menu_principal mdl-navigation__link mdl-typography--text-uppercase" href="" data-gtm-eventCategory="Menu_Principal" data-gtm-eventAction="Clique:Wear" data-gtm-eventLabel="Wear" >Wear</a>
+              <a class="menu_principal mdl-navigation__link mdl-typography--text-uppercase" href="" data-gtm-eventCategory="Menu_Principal" data-gtm-eventAction="Clique:Tv" data-gtm-eventLabel="Tv" >TV</a>
+              <a class="menu_principal mdl-navigation__link mdl-typography--text-uppercase" href="">Auto</a>
+              <a class="menu_principal mdl-navigation__link mdl-typography--text-uppercase" href="">One</a>
+              <a class="menu_principal mdl-navigation__link mdl-typography--text-uppercase" href="" onclick="mudaCor()" id="play">Play</a>
             </nav>
           </div>
           <span class="android-mobile-title mdl-layout-title">
             <img class="android-logo-image" src="images/android-logo.png" id="andLogo">
           </span>
 
-          <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
-            <i class="material-icons">more_vert</i>
+         <!-- <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" button_more = "Botão_Mais" id="more-button"> -->
+          <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect">
+            <i class="material-icons" button-more="Botão_Mais">more_vert</i>
           </button>
-          TESTE pra ver se é esse
           <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
             <li class="mdl-menu__item">5.0 Lollipop</li>
             <li class="mdl-menu__item">4.4 KitKat</li>
@@ -197,12 +198,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div class="logo-font android-slogan">be together. not the same.</div>
           <div class="logo-font android-sub-slogan">welcome to android... be yourself. do your thing. see what's going on.</div>
           <div class="logo-font android-create-character">
-            <a href=""><img src="images/andy.png"> create your android character</a>
+            <a href="" botao_e_link ="Botão_Link"><img src="images/andy.png" botao_e_link ="Botão_Logo"> create your android character</a>
           </div>
 
-          <a href="#screens">
-            <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
-              <i class="material-icons">expand_more</i>
+          <a href="#screens" >
+            <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect" onclick="dataLayer.push({'event': 'virtual-pageview'});">
+              <i class="material-icons" botao_seta_baixo="Botão_Seta_Baixo">expand_more</i>
             </button>
           </a>
         </div>
@@ -215,31 +216,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <img class="android-screen-image" src="images/wear-silver-on.png">
                 <img class="android-screen-image" src="images/wear-black-on.png">
               </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Android Wear</a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" id="AndroidWear" href="">Android Wear</a>
             </div>
             <div class="android-phone android-screen">
               <a class="android-image-link" href="">
                 <img class="android-screen-image" src="images/nexus6-on.jpg">
               </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Phones</a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" id="Phones" href="">Phones</a>
             </div>
             <div class="android-tablet android-screen">
               <a class="android-image-link" href="">
                 <img class="android-screen-image" src="images/nexus9-on.jpg">
               </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Tablets</a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" id="Tablets" href="">Tablets</a>
             </div>
             <div class="android-tv android-screen">
               <a class="android-image-link" href="">
                 <img class="android-screen-image" src="images/tv-on.jpg">
               </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Android TV</a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" id="AndroidTv" href="">Android TV</a>
             </div>
             <div class="android-auto android-screen">
               <a class="android-image-link" href="">
                 <img class="android-screen-image" src="images/auto-on.jpg">
               </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase mdl-typography--text-left" href="">Coming Soon: Android Auto</a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase mdl-typography--text-left" id="ComingSoon" href="">Coming Soon: Android Auto</a>
             </div>
           </div>
         </div>
@@ -392,13 +393,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </ul>
             <a class="android-link mdl-typography--font-light" href="">Blog</a>
             <a class="android-link mdl-typography--font-light" href="">Privacy Policy</a>
-            <a class="android-link mdl-typography--font-light" href="">Teste GA4</a>
           </div>
 
         </footer>
       </div>
     </div>
-    <a href="https://github.com/google/material-design-lite/blob/master/templates/android-dot-com/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a>
+    <a href="https://github.com/google/material-design-lite/blob/master/templates/android-dot-com/" target="_blank" view_source = "Botão_View_Source" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a>
     <script src="../../material.min.js"></script>
 
 
